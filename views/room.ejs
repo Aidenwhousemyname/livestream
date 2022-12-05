@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const ROOM_ID = " <%= roomId %> "
+    </script>
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="room.js" defer></script>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!--登錄頁面-->
+    <div class="login-wrap">
+        <div class="login-con">
+            <h1>Enter your name</h1>
+            <span>"輸入名字"</span>
+            <input type="text" placeholder="Name" id="loginName">
+            <button id="login-btn">Start</button>
+            <h5 class="mt-4 mb-3 text-muted">&copy; 2022</h5>
+        </div>
+    </div>
+
+    <div class="screen" style="display:none;">
+        <div id="video-grid"></div>
+        <div class="chat-wrap-top">
+            <h1 class="title">Livestream</h1>
+            <div class="control1 hide">
+                <button class="leaveBtn"></button>
+                <button class="clschat"></button>
+            </div>
+            <!--操作介面-->
+            <div class="control2 hide">
+                <button class="openchat"></button>
+            </div>
+        </div>
+    </div>
+    <!--聊天介面-->
+    <div class="chat-wrap" style="float:right;display:none;">
+        <div id="chatroom"></div>
+        <div class="mes-s"></div>
+        <div class="mes-c"></div>
+
+        <div class="chat-wrap-main" id="chat-wrap">
+            <div class="bottom" style="float:right;">
+                <input id="chat-input" placeholder="Type a message" name="chat-input">
+                <button id="chat-send"></button>
+            </div>
+        </div>
+    </div>
+
+    <!--直播介面-->
+    <div class="stream" style="display:none;">
+        <button id="clscam" onmousedown="secound(this)" onmouseup="first(this)"><img src=" ./images/cameraoff.png "></button>
+        <button id="clssound"><img src="./images/muteon.png"></button>
+        <button id="playmusic"><img src="./images/music.jpg"></button>
+    </div>
+    </div>
+</body>
+
+</html>

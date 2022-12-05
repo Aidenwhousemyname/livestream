@@ -1,0 +1,315 @@
+    /*登入*/
+    
+    .login-wrap {
+        position: fixed;
+        background: repeating-linear-gradient(45deg, #EAD7EA 0, #EAD7EA 15%, #ccc7e8 30%, #ccc7e8 45%, #EAD7EA 60%);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .login-con {
+        padding: 130px 20px;
+        background-color: white;
+        border-radius: 25px;
+        width: 70%;
+        max-width: 350px;
+    }
+    
+    .login-con p {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .login-con span {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .login-con input {
+        width: 50%;
+        min-width: 250px;
+        display: block;
+        margin: 20px auto;
+        height: 40px;
+        line-height: 40px;
+        border: none;
+        background-color: #f4e8f4;
+        padding: 0 20px;
+        border-radius: 20px;
+        outline: 0;
+    }
+    
+    .login-con input::placeholder {
+        color: #a19bc4;
+    }
+    
+    .login-con button {
+        width: 50%;
+        min-width: 250px;
+        display: block;
+        margin: 0 auto;
+        height: 40px;
+        line-height: 40px;
+        border: none;
+        background: #7062D1;
+        color: #fff;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        outline: 0;
+    }
+    
+    .login-con button:hover {
+        filter: brightness(.8);
+        cursor: pointer;
+    }
+    /*畫面*/
+    
+    #video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px);
+        grid-template-rows: 60px;
+    }
+    
+    video {
+        margin-top: 100px;
+        width: 100%;
+        height: 100;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+    /*聊天室*/
+    
+    #chatroom
+    /*聊天框*/
+    
+    {
+        position: fixed;
+        left: 70%;
+        width: 30%;
+        height: 71%;
+        overflow-y: scroll;
+        align-items: right;
+    }
+    
+    .mes-s {
+        color: black;
+        display: block;
+        text-align: right;
+        /**/
+        padding: 10px 0;
+        font-size: 18px;
+        font-family: sans-serif;
+        margin-right: 15px;
+    }
+    
+    .mes-c {
+        color: black;
+        display: block;
+        padding: 10px 0;
+        text-align: left;
+        /**/
+        font-size: 18px;
+        font-family: sans-serif;
+        margin-left: 15px;
+    }
+    
+    .title {
+        position: fixed;
+        width: 30%;
+        font-family: sans-serif;
+    }
+    
+    .chat-wrap
+    /*灰色聊天框*/
+    
+    {
+        position: fixed;
+        background-color: #f4f4f4;
+        left: 70%;
+        width: 30%;
+        height: 75%;
+        align-items: right;
+        margin-top: 30px;
+    }
+    
+    .chat-wrap-top {
+        position: fixed;
+        background: #979ae5;
+        box-shadow: 0px -7px 15px #c3c4dd;
+        padding: 15px;
+        text-align: left;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        padding-top: 20px;
+    }
+    
+    .chat-wrap-top h3
+    /*在線人數字體*/
+    
+    {
+        font-size: 15px;
+        font-weight: 600;
+        color: #494949;
+    }
+    
+    .chat-wrap-main {
+        padding: 0 0;
+        padding-bottom: 70px;
+    }
+    
+    .bottom {
+        position: fixed;
+        bottom: 0;
+        left: 70%;
+        width: 30%;
+        height: 65px;
+        background: rgba(19, 168, 213, 0.8);
+        padding-top: 30px;
+    }
+    
+    .bottom input {
+        width: calc(100% - 150px);
+        margin: 0 20px;
+        height: 45px;
+        border-radius: 35px;
+        float: left;
+        border: none;
+        outline: none;
+        line-height: 50px;
+        padding: 0 20px;
+        box-shadow: 0px 0px 12px #d5d6e5;
+    }
+    
+    .bottom button {
+        margin-right: 25px;
+        width: 45px;
+        height: 45px;
+        border-radius: 25px;
+        float: right;
+        border: none;
+        background: #979ae5;
+        outline: none;
+        color: #fff;
+    }
+    
+    .bottom button:hover {
+        cursor: pointer;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    
+    .leaveBtn {
+        margin-right: 35px;
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        float: right;
+        border: none;
+        outline: none;
+        color: #747474;
+        background-image: url('./images/cross.png');
+        background-color: transparent;
+        background-size: 140%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .leaveBtn:hover {
+        cursor: pointer;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    
+    .clschat {
+        margin-right: 25px;
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        float: right;
+        border: none;
+        outline: none;
+        color: #747474;
+        background-image: url('./images/clschat.jpg');
+        background-color: transparent;
+        background-size: 140%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .clschat:hover {
+        cursor: pointer;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    /*控制*/
+    
+    .openchat {
+        margin-right: 35px;
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        float: right;
+        border: none;
+        outline: none;
+        color: #747474;
+        background-image: url('./images/openchat.jpg');
+        background-color: transparent;
+        background-size: 140%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .openchat:hover {
+        cursor: pointer;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    /*直播*/
+    
+    .stream {
+        position: fixed;
+        bottom: 0;
+        right: 70%;
+        width: 30%;
+        height: 80px;
+        background: rgba(255, 255, 255, .8);
+        padding-top: 30px;
+    }
+    
+    .stream button {
+        margin-left: 25px;
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        float: bottom;
+        border: none;
+        /* background: #979ae5;
+   color: #fff;
+   */
+        outline: none;
+        background-size: 130%;
+        background-color: transparent;
+        background-repeat: no-repeat;
+    }
+    
+    .stream button:hover {
+        cursor: pointer;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    
+    .stream img {
+        width: 45px;
+    }
+    
+    #chat-send {
+        background-image: url('./images/semd.jpg');
+        background-color: transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
